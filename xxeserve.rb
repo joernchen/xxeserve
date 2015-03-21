@@ -2,6 +2,9 @@
 
 require 'sinatra'
 
+set :port, 443 #set listening port here
+set :bind, '0.0.0.0' #so are aren't just listening locally
+
 get "/" do
   return "OHAI" if params[:p].nil?
   f = File.open("./files/#{request.ip}#{Time.now.to_i}","w")
