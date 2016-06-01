@@ -2,7 +2,7 @@
 
 require 'sinatra'
 
-set :port, 443 #set listening port here
+set :port, ARGV[0] || 443  #set listening port here
 set :bind, '0.0.0.0' #so are aren't just listening locally
 
 get "/" do
